@@ -4,7 +4,9 @@
 
 Опрашивает все Datastore, вычисляет процент свободного места и инициализирует ВМ, которые используют свои vmdk на Datastore. Переменаня $proc (в примере, 30%) является тригерным условием, для отправки уведомления.
 
-![Image alt](https://github.com/Lifailon/VMWare-Report-Telegram/blob/rsa/Report.jpg)
+![Image alt](https://github.com/Lifailon/VMWare-Report/blob/rsa/Report.jpg)
 
 ## Reconfig-VM-Report - отображает события всех изменений конфигурации ВМ за текущий день
 В примере (на скриншоте) я вначале отключил сетевой адаптер (Network adapter 2 - Connected Off), соот-но текст присутствует только в блоке "Modified", после этого удалил его, о чем свидетельствует 3-й блок лога "Deleted", а за ним хар-ки адаптера. Затем выключил и включил первый сетевой адаптер, тем самым инициализировал порядковый номер device 4000 и 4001, относящиеся к Network adapter. Таким образом, можно фиксировать изменения конфигурации относящиеся к конкретным Device.
+
+![Image alt](https://github.com/Lifailon/VMWare-Report/blob/rsa/Reconfig-Network-Device.jpg)
